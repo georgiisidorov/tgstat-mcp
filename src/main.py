@@ -4,7 +4,7 @@ from typing import Optional
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
 
-from tgstat_client import TGStatClient
+from .tgstat_client import TGStatClient
 
 load_dotenv()
 
@@ -727,5 +727,9 @@ async def get_audience_insights(
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
